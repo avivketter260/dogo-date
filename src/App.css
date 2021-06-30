@@ -46,8 +46,8 @@ html.js-focus-visible {
   text-shadow: -1px 1px #000, -2px 2px #000, -3px 3px #000, -4px 4px #000, -5px 5px #000, -6px 6px #000, -7px 7px #000, -8px 8px #000;
 }
 .left { 
-  margin: -46% 51% 0% 24%;
-  line-height: 1.7; 
+  margin: -49% 51% 0% 24%;
+    line-height: 1.7;
   } 
 
 .button-sign-in {
@@ -201,7 +201,7 @@ input[type="date"]{
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  margin-top: -9%;
+  margin-top: -13%;
   margin-left: 52px;
   width: 408px;
   width: 313px;
