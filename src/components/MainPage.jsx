@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import logoDogo from '../pics/logoDogo.png'
+import constraction from './../pics/inprosess.png'
 import mainDog from '../pics/defaultProfile.jpg'
-
-
+import Likes from './Likes'
+import Messages from './Message'
+import Questions from './Questions'
 const MainPage = () => {
     const allUserData = useSelector(state => state.newUserDetailes)
     console.log(allUserData);
@@ -75,7 +77,7 @@ const MainPage = () => {
 
 
     const moveRight = () => {
-        if (padding === 2724 ) return setPadding(padding= 4)
+        if (padding === 2724) return setPadding(padding = 4)
         setPadding(padding += 20)
         console.log(padding);
     }
@@ -93,78 +95,119 @@ const MainPage = () => {
     }
 
     const like = (e) => {
-        if( e.target.style.color==='red') return   e.target.style.color='lightgrey'
-        
-        e.target.style.opacity='1'
-        e.target.style.color='red'
+        if (e.target.style.color === 'red') return e.target.style.color = 'lightgrey'
+
+        e.target.style.opacity = '1'
+        e.target.style.color = 'red'
     }
-    return (
-        <div>
+    if (focusDiscover) {
 
-            <div className="navBar-main" >
-
-                <div className="main-title"><span >DogoDate</span></div>&nbsp;&nbsp;
-                <div className={focusDiscover ? 'active' : 'discover'} onClick={getDiscoverFocuse}>
-                    <span>Discover</span>&nbsp;&nbsp;
-                    <i class="fas fa-search"></i>
-                </div>
-                <div className={focusQuestions ? 'active' : 'questions'} onClick={getQuestionsFocuse}>
-                    <span>Questions</span>&nbsp;&nbsp;
-                    <i class="fas fa-question"></i>
-                </div>
-                <div className={focusLikes ? 'active' : 'likes'} onClick={getLikeFocuse}>
-                    <span >Likes</span>&nbsp;&nbsp;
-                    <i class="fas fa-heart"></i>
-                </div>
-                <div className={focusMessages ? 'active' : 'messages'} onClick={getMessagesFocuse} >
-                    <span>Messages</span>&nbsp;&nbsp;
-                    <i class="far fa-envelope"></i>
-                </div>
-
-
-
-                <div className="peofile-pic">
-                    <img className='img-prof' width='60px' height="60px" src={mainDog} />
-                    hello {allUserData.userDetailes.username}
-                </div>
-
-
-            </div>
-
-
-            {/* -----------------------------------DISCOVER--------------------------------------------- */}
-            <i class="arrow-left fa-3x fa fas fa-arrow-circle-left" onClick={moveLeft}></i>
-            <i className="arrow-right fas fa-3x fa-arrow-circle-right" onClick={moveRight}></i>
-            <div style={{ paddingRight: `${padding}%` }} className="dogs-profiles-container">
-                {/**203% ? %:px padding right */}
-                {allApiDogs.map((dog, index) => {
-                    // if(!dog.breeds[0].temperament) return
-                    // console.log(dog.breeds[0].bred_for);
-                    for (let i in dog.breeds[0]) {
-
-                        return (
-                            <div key={index} className="dog-frame">
-                                <img className="dogs-img" src={dog.url} alt="" />
-                                <h4>{dog.breeds[0]['name']}</h4>
-                                {/* <h5>{dog.breeds[0]['life_span']}</h5> */}
-                                <h6>{dog.breeds[0]['temperament']}</h6>
-                                <i style={heart} className="far fa-2x fa-heart"  onClick={like}></i>
-                            </div>
-                        )
-                    }
-                })}
-
-            </div>
-            <div className="main-footer">
-                <p>
-                    © Dogo Date | Aviv Ketter</p>
-            </div>
+        return (
             <div>
 
-            </div>
+                <div className="navBar-main" >
 
-        </div>
-    )
+                    <div className="main-title"><span >DogoDate</span></div>&nbsp;&nbsp;
+                    <div className={focusDiscover ? 'active' : 'discover'} onClick={getDiscoverFocuse}>
+                        <span>Discover</span>&nbsp;&nbsp;
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div className={focusQuestions ? 'active' : 'questions'} onClick={getQuestionsFocuse}>
+                        <span>Questions</span>&nbsp;&nbsp;
+                        <i class="fas fa-question"></i>
+                    </div>
+                    <div className={focusLikes ? 'active' : 'likes'} onClick={getLikeFocuse}>
+                        <span >Likes</span>&nbsp;&nbsp;
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div className={focusMessages ? 'active' : 'messages'} onClick={getMessagesFocuse} >
+                        <span>Messages</span>&nbsp;&nbsp;
+                        <i class="far fa-envelope"></i>
+                    </div>
+
+
+
+                    <div className="peofile-pic">
+                        <img className='img-prof' width='60px' height="60px" src={mainDog} />
+                        hello {allUserData.userDetailes.username}
+                    </div>
+
+
+                </div>
+
+
+                {/* -----------------------------------DISCOVER--------------------------------------------- */}
+                <i class="arrow-left fa-3x fa fas fa-arrow-circle-left" onClick={moveLeft}></i>
+                <i className="arrow-right fas fa-3x fa-arrow-circle-right" onClick={moveRight}></i>
+                <div style={{ paddingRight: `${padding}%` }} className="dogs-profiles-container">
+                    {/**203% ? %:px padding right */}
+                    {allApiDogs.map((dog, index) => {
+                        // if(!dog.breeds[0].temperament) return
+                        // console.log(dog.breeds[0].bred_for);
+                        for (let i in dog.breeds[0]) {
+
+                            return (
+                                <div key={index} className="dog-frame">
+                                    <img className="dogs-img" src={dog.url} alt="" />
+                                    <h4>{dog.breeds[0]['name']}</h4>
+                                    {/* <h5>{dog.breeds[0]['life_span']}</h5> */}
+                                    <h6>{dog.breeds[0]['temperament']}</h6>
+                                    <i style={heart} className="far fa-2x fa-heart" onClick={like}></i>
+                                </div>
+                            )
+                        }
+                    })}
+
+                </div>
+                <div className="main-footer">
+                    <p>
+                        © Dogo Date | Aviv Ketter</p>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+        )
+    }
+  
+    if (focusMessages || focusLikes ||focusQuestions) {
+        return (
+            <div>
+                   <div className="navBar-main" >
+    
+    <div className="main-title"><span >DogoDate</span></div>&nbsp;&nbsp;
+    <div className={focusDiscover ? 'active' : 'discover'} onClick={getDiscoverFocuse}>
+        <span>Discover</span>&nbsp;&nbsp;
+        <i class="fas fa-search"></i>
+    </div>
+    <div className={focusQuestions ? 'active' : 'questions'} onClick={getQuestionsFocuse}>
+        <span>Questions</span>&nbsp;&nbsp;
+        <i class="fas fa-question"></i>
+    </div>
+    <div className={focusLikes ? 'active' : 'likes'} onClick={getLikeFocuse}>
+        <span >Likes</span>&nbsp;&nbsp;
+        <i class="fas fa-heart"></i>
+    </div>
+    <div className={focusMessages ? 'active' : 'messages'} onClick={getMessagesFocuse} >
+        <span>Messages</span>&nbsp;&nbsp;
+        <i class="far fa-envelope"></i>
+    </div>
+    
+    
+    
+    <div className="peofile-pic">
+        <img className='img-prof' width='60px' height="60px" src={mainDog} />
+        hello {allUserData.userDetailes.username}
+    </div>
+    
+    
+    </div>
+    
+                <img className='constraction' src={constraction} alt="" />
+            </div>
+        )
+    }
 }
 
 export default MainPage
