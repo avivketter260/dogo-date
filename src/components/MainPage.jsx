@@ -3,9 +3,7 @@ import { useSelector } from 'react-redux'
 import logoDogo from '../pics/logoDogo.png'
 import constraction from './../pics/inprosess.png'
 import mainDog from '../pics/defaultProfile.jpg'
-import Likes from './Likes'
-import Messages from './Message'
-import Questions from './Questions'
+
 const MainPage = () => {
     const allUserData = useSelector(state => state.newUserDetailes)
     console.log(allUserData);
@@ -77,7 +75,7 @@ const MainPage = () => {
 
 
     const moveRight = () => {
-        if (padding === 2724) return setPadding(padding = 4)
+        if (padding === 2600) return setPadding(padding = 4)
         setPadding(padding += 20)
         console.log(padding);
     }
