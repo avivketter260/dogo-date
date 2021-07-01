@@ -75,7 +75,7 @@ const MainPage = () => {
 
 
     const moveRight = () => {
-        if (padding >= 2600) return setPadding(padding = 4)
+        if (padding >= 2000) return setPadding(padding = 4)
         setPadding(padding += 20)
         console.log(padding);
     }
