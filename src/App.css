@@ -191,18 +191,14 @@ input[type="date"]{
 }
 
  
- .register-bottom {
+.register-bottom {
   background: transparent;
   border: 0;
   padding: 0;
   color: #fff;
-  position: absolute;
-  top: 81%;
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  margin-top: -13%;
-  margin-left: 52px;
   width: 408px;
   width: 313px;
   background: #000;
