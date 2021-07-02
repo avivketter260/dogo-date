@@ -9,6 +9,9 @@ html.js-focus-visible {
 .landing-container {
   height: 100%;
   background: #29e6de;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .navBar {
@@ -288,7 +291,7 @@ form.profile-form {
 }
 .user-input{
   animation: forom 0.1s ease-out 1s forwards;
-position: relative;
+
 }
 .profile-gender {
   position: relative;
@@ -299,10 +302,10 @@ position: relative;
 
 @keyframes forom{
   100%{
-    left: 60vh;
+    left: 0vh;
    }
    50%{
-    left: 35vh;
+     left: 30vh;
    }
    20%{
      left:-1vh;
@@ -651,13 +654,11 @@ background:linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
   border-radius: 20px;
   box-shadow: 0 0 12px 1px #d0d0d0;
   display: flex;
-  grid-row-gap: 5%;
-  alignment-baseline: middle;
+ 
+  row-gap: 5%;
   column-gap: 18px;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
 .dog-frame {
@@ -778,9 +779,6 @@ form.registe-form {
   width: 92%;
   margin-left: 2vh;
   margin-top: -4vh;
-  background: #000;
-  border-radius: 3px;
-  font-size: 1rem;
   line-height: 62px;
   text-align: center;
   font-weight: bold;
@@ -796,11 +794,38 @@ form.registe-form {
   width: 92%;
   margin-left: 2vh;
   margin-top: 5vh;
-  background: #000;
-  border-radius: 3px;
-  font-size: 1rem;
-  line-height: 62px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1.1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dogo-img {
+    width: 191%;
+    position: relative;
+    height: 41vh;
+    top: 19vh;
+}
+
+.left {
+    margin: -21vh 32vh 1vh 2vh;
+    line-height: 1.7;
+}
+
+.footer {
+    background: rgb(21 21 22);
+    /* margin: 8% 0% 0% 0%; */
+    margin-top: 20vh;
+    width: 101%;
+    color: white;
+    display: inline-flex;
+    height: 9vh;
+    flex-direction: column;
+    justify-content: center;
+}
+.navBar {
+    min-height: 7vh;
+    /* margin-left: 22%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
 }
