@@ -205,7 +205,7 @@ dispatch(userProfileDetailesLocation(city))
                     <span className='visibleToOthers'> < i style={{ marginRight: '12px' }} class="far fa-eye"></i>This info will be visible to others</span>
                     {next ?
                      <Link to='/upload-img'>
-                        <button  className="register-bottom-onboard" onClick={handelSubmit}>NEXT</button>
+                        <button  className="register-bottom-location" onClick={handelSubmit}>NEXT</button>
                     </Link> 
                     : <button style={{ left: '5%' }, { pointerEvents: 'none' }, { opacity: '0.5' }} className="register-bottom-onboard">Next</button>}
                 </form>

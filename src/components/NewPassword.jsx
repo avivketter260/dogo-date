@@ -45,7 +45,7 @@ const NewPassword = () => {
                     <h4>password</h4>
 
                 </div>
-                <h1>What is Your Password?</h1>
+                <h1 className='h1-title'>What is Your Password?</h1>
 
                 <form className="registe-form" >
                     <label style={{ textAlign: 'left' }} >Password</label><br />

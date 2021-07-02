@@ -81,6 +81,11 @@ html.js-focus-visible {
     font-family: sans-serif;
     transform: translate(-50%, -50%);
     height: 85vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 27%;
     background: #f2f2f2;
     overflow: hidden;
@@ -116,9 +121,7 @@ html.js-focus-visible {
   justify-content: center;
 }
 
-form.registe-form {
-  margin: 62px 5px 42px 0px;
-}
+
 
 p {
   font-size: larger;
@@ -148,11 +151,10 @@ span{
 
 input[type="email"], input[type="password"] {
   border: none;
-  height: 7vh;
-  width: 95%;
-  padding-left: 4%;
+  position: relative;
+  height: 9vh;
+  width: 200%;
 }
-
 select{
   border: none;
   height: 4vh;
@@ -184,11 +186,7 @@ input[type="date"]{
   box-shadow: 2px 3px #888888;
   padding-left: 12px;
 }
-.visibleToOthers {
-  position: absolute;
-  top: 72%;
-  right: 21%;
-}
+
 
  
 .register-bottom {
@@ -218,19 +216,15 @@ input[type="date"]{
 .onboard {
   margin-top:0%;
 }
-.register-bottom-onboard{
+.register-bottom-onboard {
   background: transparent;
   border: 0;
   padding: 0;
   color: #fff;
-  position: absolute;
-  top: 81%;
   cursor: pointer;
   box-sizing: border-box;
-  display: inline-block;
-  margin-top: 10%;
-  margin-left: 25px;
-  width: 80%;
+  width: 150%;
+  margin-top: 7vh;
   background: #000;
   border-radius: 3px;
   font-size: 1rem;
@@ -239,19 +233,16 @@ input[type="date"]{
   font-weight: bold;
   letter-spacing: 1.1px;
 }
-.register-bottom-profile{
+.register-bottom-profile {
   background: transparent;
   border: 0;
   padding: 0;
   color: #fff;
-  position: absolute;
   top: 81%;
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  margin-top: 10%;
-  margin-left: -25px;
-  width:243px;
+  width: 243px;
   background: #000;
   border-radius: 3px;
   font-size: 1rem;
@@ -297,38 +288,41 @@ form.profile-form {
 }
 .user-input{
   animation: forom 0.1s ease-out 1s forwards;
-
+position: relative;
 }
-.profile-gender{
+.profile-gender {
   position: relative;
-  right: 400px;
+  margin-left: -9vh;
+  right: 250vh;
   animation: gender 0.1s ease-out 1s forwards;
-
 }
 
 @keyframes forom{
   100%{
-    margin-left: 500px;
-  }
-}
-
-
+    left: 60vh;
+   }
+   50%{
+    left: 35vh;
+   }
+   20%{
+     left:-1vh;
+   }
+ }
 @keyframes gender{
   100%{
-   left: 0px;
+   left: 0vh;
   }
   50%{
-    left: 80px;
+    left: 30vh;
   }
   20%{
-    left: -1px;
+    left:17vh;
   }
 }
 
 label {
   line-height: 57px;
   font-size: 25px;
-  padding: 13px;
 }
 .radio-femal {
   border-bottom: 1px solid #80808085;
@@ -337,20 +331,13 @@ label {
 }
 input[type="radio"] {
   position: relative;
-  left: 103px;
-  height: 2vh;
-  width: 13px;
+  left: 11vh;
 }
 input.input-radio-male {
   position: relative;
   left: 61%;
 }
-.place-it{
-  position: absolute;
-  top: 84%;
-  left: 12%;
 
-}
 .user-date{
   position: relative;
   right: 300%;
@@ -664,11 +651,13 @@ background:linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
   border-radius: 20px;
   box-shadow: 0 0 12px 1px #d0d0d0;
   display: flex;
- 
-  row-gap: 5%;
+  grid-row-gap: 5%;
+  alignment-baseline: middle;
   column-gap: 18px;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .dog-frame {
@@ -771,4 +760,47 @@ img.constraction {
   left: 50%;
   top: 50%;
   transform: translate(-51%, -38%);
+}
+form.registe-form {
+  position: relative;
+  top: -5vh;
+}
+.h1-title{
+  text-align: center;
+}
+.register-bottom-createProfile {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 92%;
+  margin-left: 2vh;
+  margin-top: -4vh;
+  background: #000;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 62px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+.register-bottom-location{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 92%;
+  margin-left: 2vh;
+  margin-top: 5vh;
+  background: #000;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 62px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.1px;
 }
