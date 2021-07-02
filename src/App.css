@@ -941,4 +941,19 @@ input[type="email"], input[type="password"] {
   flex-direction: column;
   justify-content: center;
 }
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  transform: translate(-50%, -50%);
+  height: 47vh;
+  /* width: 22%; */
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
 }
