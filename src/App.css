@@ -836,4 +836,109 @@ form.registe-form {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: sans-serif;
+  transform: translate(-50%, -50%);
+  height: 67vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 76%;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+}
+input[type="email"], input[type="password"] {
+    border: none;
+    position: relative;
+    height: 6vh;
+    /* font-size: x-large; */
+    width: 200%;
+} 
+.register-bottom-createProfile {
+    background: black;
+    border: 0;
+    padding: 0;
+    height: 7vh;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 92%;
+    margin-top: 4vh;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+}
+.onBoardComp {
+  margin: -61px -123px 4px -21px;
+  text-align: center;
+  font-size: larger;
+  padding: 56px 245px 7px 39px;
+}
+.register-bottom-onboard {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 99%;
+  margin-top: 7vh;
+  background: #000;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 62px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+.register-bottom-location {
+  background: black;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 92%;
+  height: 7vh;
+  /* margin-left: 2vh; */
+  /* margin-top: 5vh; */
+}
+.register-bottom-v2 {
+  border: 0;
+  padding: 0;
+  /* position: absolute; */
+  /* top: 69%; */
+  cursor: pointer;
+  box-sizing: border-box;
+  display: inline-block;
+  /* margin-top: 29px; */
+  /* margin-left: 238px; */
+  /* width: 408px; */
+  /* width: 154px; */
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 62px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+.main-footer {
+  background-color: rgb(30 30 33);
+  /* margin: 30% 0% 0% 0%; */
+  position: relative;
+  width: 101%;
+  top: 64vh;
+  color: white;
+  display: inline-flex;
+  height: 20vh;
+  flex-direction: column;
+  justify-content: center;
+}
 }
