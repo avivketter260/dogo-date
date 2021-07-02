@@ -801,8 +801,8 @@ form.registe-form {
     width: 191%;
     position: relative;
     height: 41vh;
-    top: 19vh;
-}
+    top: 29vh;
+  }
 
 .left {
     margin: -21vh 32vh 1vh 2vh;
@@ -827,5 +827,13 @@ form.registe-form {
     justify-content: space-between;
     align-items: center;
     position: sticky;
+}
+.landing-container {
+  height: 100%;
+  background: #29e6de;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 }
