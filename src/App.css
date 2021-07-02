@@ -830,7 +830,7 @@ form.registe-form {
 }
 .landing-container {
   height: 100%;
-  background: #f2f2f2;
+  background: white;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -859,7 +859,7 @@ input[type="email"], input[type="password"] {
     position: relative;
     height: 6vh;
     /* font-size: x-large; */
-    width: 200%;
+    width: 100%;
 } 
 .register-bottom-createProfile {
     background: black;
