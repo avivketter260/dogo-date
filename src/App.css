@@ -22,10 +22,10 @@ html.js-focus-visible {
   align-items: center;
   position: sticky;
 }
-.main{
-  margin: 2% -6% 0% -2%;
-
+.main {
+  margin-top: 3rem;
 }
+
 .right{
   margin-left: 44%;
   padding: 0% 27% 4% 1%;
@@ -200,7 +200,7 @@ input[type="date"]{
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  width: 408px;
+  margin-top: 3rem;
   width: 313px;
   background: #000;
   border-radius: 3px;
