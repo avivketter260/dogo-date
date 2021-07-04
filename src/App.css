@@ -770,7 +770,7 @@ form.registe-form {
   text-align: center;
 }
 .register-bottom-createProfile {
-  background: transparent;
+  background: black;
   border: 0;
   padding: 0;
   color: #fff;
@@ -784,14 +784,18 @@ form.registe-form {
   font-weight: bold;
   letter-spacing: 1.1px;
 }
-.register-bottom-location{
-  background: transparent;
+.img {
+  margin-left: 3rem;
+}
+.register-bottom-location {
+  background: black;
   border: 0;
   padding: 0;
   color: #fff;
   cursor: pointer;
   box-sizing: border-box;
   width: 92%;
+  height: 8vh;
   margin-left: 2vh;
   margin-top: 5vh;
 }
@@ -858,7 +862,6 @@ input[type="email"], input[type="password"] {
     border: none;
     position: relative;
     height: 6vh;
-    /* font-size: x-large; */
     width: 100%;
 } 
 .register-bottom-createProfile {
@@ -879,49 +882,30 @@ input[type="email"], input[type="password"] {
   margin: -61px -123px 4px -21px;
   text-align: center;
   font-size: larger;
-  padding: 56px 245px 7px 39px;
+  padding: 51px 203px 5px 75px;
 }
-.register-bottom-onboard {
-  background: transparent;
-  border: 0;
-  padding: 0;
-  color: #fff;
-  cursor: pointer;
-  box-sizing: border-box;
-  width: 99%;
-  margin-top: 7vh;
-  background: #000;
-  border-radius: 3px;
-  font-size: 1rem;
-  line-height: 62px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1.1px;
-}
-.register-bottom-location {
+
+.register-bottom-createProfile {
   background: black;
   border: 0;
   padding: 0;
+  height: 7vh;
   color: #fff;
   cursor: pointer;
   box-sizing: border-box;
-  width: 92%;
-  height: 7vh;
-  /* margin-left: 2vh; */
-  /* margin-top: 5vh; */
+  width: 81%;
+  margin-top: -3em;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.1px;
 }
+
 .register-bottom-v2 {
   border: 0;
   padding: 0;
-  /* position: absolute; */
-  /* top: 69%; */
   cursor: pointer;
   box-sizing: border-box;
   display: inline-block;
-  /* margin-top: 29px; */
-  /* margin-left: 238px; */
-  /* width: 408px; */
-  /* width: 154px; */
   border-radius: 3px;
   font-size: 1rem;
   line-height: 62px;
@@ -929,16 +913,77 @@ input[type="email"], input[type="password"] {
   font-weight: bold;
   letter-spacing: 1.1px;
 }
+.navBar-main {
+  min-height: 29vh;
+  /* min-width: 140%; */
+  background: rgb(21 21 22);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  padding: 0;
+  color: #fff;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.main-title {
+  font-size: large;
+  align-self: baseline;
+  font-weight: 700;
+  word-spacing: 1.5px;
+}
+.active {
+  position: relative;
+  margin-top: -2rem;
+  padding: 0;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  height: 5vh;
+  border-bottom: 5px solid pink;
+}
+.peofile-pic {
+  display: grid;
+  margin-left: 26rem;
+  margin-top: -6rem;
+}
 .main-footer {
   background-color: rgb(30 30 33);
-  /* margin: 30% 0% 0% 0%; */
-  position: relative;
   width: 101%;
   top: 64vh;
   color: white;
   display: inline-flex;
   height: 20vh;
   flex-direction: column;
+  justify-content: center;
+}
+html.js-focus-visible {
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+
+.dog-frame {
+  width: 100%;
+  text-align: center;
+  margin-inline: 0.4rem;
+  /* box-shadow: 0 0 20px 8px #d0d0d0; */
+}
+.dogs-profiles-container {
+  display: grid;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding-left: 0;
+  padding: auto;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-gap: 2rem;
+  align-items: center;
+  transform: none;
+  height: auto;
+  width: auto;
   justify-content: center;
 }
 .login {
@@ -955,5 +1000,11 @@ input[type="email"], input[type="password"] {
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 0 20px 8px #d0d0d0;
+}
+.arrow-right {
+  display: none;
+}
+.arrow-left {
+  display: none;
 }
 }

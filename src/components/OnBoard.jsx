@@ -16,7 +16,7 @@ const OnBoard = () => {
 
                 <h2 >Let's start with the basics</h2>
                 <p className="onBoardComp">Set up your profile to meet new dogs.</p>
-                <img width='300px' src={dogslove2} alt="" /><br />
+                <img className='img' width='300px' src={dogslove2} alt="" /><br />
                 <Link to ='/username' >
                 <button className="register-bottom-createProfile">NEXT</button>
                 </Link>

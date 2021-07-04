@@ -207,7 +207,7 @@ dispatch(userProfileDetailesLocation(city))
                      <Link to='/upload-img'>
                         <button  className="register-bottom-location" onClick={handelSubmit}>NEXT</button>
                     </Link> 
-                    : <button style={{ left: '5%' }, { pointerEvents: 'none' }, { opacity: '0.5' }} className="register-bottom-onboard">Next</button>}
+                    : <button style={ { pointerEvents: 'none' }, { opacity: '0.5' }} className="register-bottom-location">Next</button>}
                 </form>
             </div>
         </div>
