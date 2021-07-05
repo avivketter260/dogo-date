@@ -192,7 +192,7 @@ dispatch(userProfileDetailesLocation(city))
             <div className="box">
                 <br />
                 <form  >
-                    <h1 style={title} >Where do you live?</h1>
+                    <h1  >Where do you live?</h1>
                     <select name="city" id="city" onChange={handelChange}>
                         <option key='main'>Where you live?</option>                        {
                             allLocationData.map((city, i) => {
@@ -202,7 +202,9 @@ dispatch(userProfileDetailesLocation(city))
                             })
                         }
                     </select>
-                    <span className='visibleToOthers'> < i style={{ marginRight: '12px' }} class="far fa-eye"></i>This info will be visible to others</span>
+                    <br />
+                    <br />
+                    <span className='visibleToOthers'> < i  class="far fa-eye"></i>This info will be visible to others</span>
                     {next ?
                      <Link to='/upload-img'>
                         <button  className="register-bottom-location" onClick={handelSubmit}>NEXT</button>

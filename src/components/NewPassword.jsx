@@ -51,11 +51,11 @@ const NewPassword = () => {
                     <label style={{ textAlign: 'left' }} >Password</label><br />
                     <input type="password" name="password" onChange={handelChange} />
                     <br />
-                    {sendToStore? <Link to='/onboard' >
-                        <button onClick={handelSubmit} className="register-bottom-onboard">Next</button>
-                    </Link>:<button style={{pointerEvents:'none'},{opacity:'0.5'}} className="register-bottom-onboard">Next</button> }
 
                 </form>
+                    {sendToStore? <Link to='/onboard' >
+                        <button onClick={handelSubmit} className="register-bottom-onboard">Next</button>
+                    </Link>:<button style={{opacity:'0.5'}} className="register-bottom-onboard">Next</button> }
 
             </div>
         </div>

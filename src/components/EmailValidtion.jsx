@@ -101,10 +101,10 @@ const EmailValidtion = () => {
                     <input type="email" name="email" className='email' placeholder='your.email@example.com' onChange={handelChange} />
                     <br />
                     {isValid ? isValid : null}
-                    {emailExists ? temp : temp2}
 
                  
                 </form>
+                    {emailExists ? temp : temp2}
 
             </div>
         </div>

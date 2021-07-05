@@ -83,13 +83,13 @@ html.js-focus-visible {
     top: 50%;
     font-family: sans-serif;
     transform: translate(-50%, -50%);
-    height: 85vh;
+    /* height: 85vh; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 27%;
+    width: 100%;
     background: #f2f2f2;
     overflow: hidden;
     border-radius: 20px;
@@ -154,16 +154,12 @@ span{
 
 input[type="email"], input[type="password"] {
   border: none;
-  position: relative;
-  height: 9vh;
-  width: 200%;
+  width: 142%;
+  font-size: unset;
+  padding: 1rem 2rem;
+  width: 100%;
 }
-select{
-  border: none;
-  height: 4vh;
-  width: 82%;
-  padding-left: 3%;
-}
+
 input[type="text"] {
   margin-top: 2%;
   margin-left: -1%;
@@ -178,18 +174,15 @@ input:focus-visible {
   outline-offset: none;
   outline: none;
 }
-input[type="date"]{
-  margin-top: 11%;
-  margin-left: 10%;
+input[type="date"] {
+  margin: 1rem auto;
+  padding: 1rem 1rem;
   border: none;
-  width: 83%;
-  height: 8vh;
+  width: 100%;
   font-weight: 900;
   font-size: large;
   box-shadow: 2px 3px #888888;
-  padding-left: 12px;
 }
-
 
  
 .register-bottom {
@@ -224,14 +217,16 @@ input[type="date"]{
   border: 0;
   padding: 0;
   color: #fff;
+  margin-top: 6rem;
   cursor: pointer;
+  padding: 1.5rem 11rem;
   box-sizing: border-box;
-  width: 150%;
-  margin-top: 7vh;
+  /* width: 100%; */
+  /* margin-top: 7vh; */
   background: #000;
   border-radius: 3px;
   font-size: 1rem;
-  line-height: 62px;
+  /* line-height: 62px; */
   text-align: center;
   font-weight: bold;
   letter-spacing: 1.1px;
@@ -295,7 +290,6 @@ form.profile-form {
 }
 .profile-gender {
   position: relative;
-  margin-left: -9vh;
   right: 250vh;
   animation: gender 0.1s ease-out 1s forwards;
 }
@@ -377,20 +371,17 @@ input.input-radio-male {
   color: white;
   border-bottom: 1px solid white;
 }
+
+
 select {
   border: none;
   background: #f2f2f2;
-  height: 5vh;
   width: 100%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
   font-weight: normal;
   font-size: x-large;
   border-bottom: 1px solid #80808085;
   font-family: sans-serif;
-  transform: translate(-50%, -50%);
-  padding-left: 3%;
+  margin: 2rem 1rem;
 }
 select:focus-visible {
   outline:none !important
@@ -671,29 +662,11 @@ background:linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
   box-shadow: 0 0 20px 8px #d0d0d0;
 }
 .dogs-img {
-  width: 100%;
-  max-height: 21vh;
-    border-bottom: 2px solid lightgray;
+  width: 76%;
+  padding: -1rem 1rem;
+  max-height: 65%;
+  border-bottom: 2px solid lightgray;
 }
-/* .dogs-profiles-container {
-  position: absolute;
-  left: 50%;
-  top: 58%;
-  font-family: sans-serif;
-  transform: translate(-50%, -50%);
-  height: 82vh;
-  width: 100%;
-  background: #f2f2f2;
-  overflow: hidden;
-  /* display: grid; */
-  /* border-radius: 20px; */
-  /* box-shadow: 0 0 12px 1px #d0d0d0; */
-  /* padding: 4rem; */
-  /* display: grid; */
-  /* grid-template-columns: repeat(5,1fr); */
-  /* align-items: center; */
-  /* gap: 3rem; */
-/* } */ 
 
 .main-footer {
   background-color: rgb(30 30 33);
@@ -763,8 +736,7 @@ img.constraction {
   transform: translate(-51%, -38%);
 }
 form.registe-form {
-  position: relative;
-  top: -5vh;
+  padding-right: 11rem;
 }
 .h1-title{
   text-align: center;
@@ -840,30 +812,20 @@ form.registe-form {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
 .box {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  font-family: sans-serif;
-  transform: translate(-50%, -50%);
-  height: 67vh;
   display: flex;
+  padding: 0rem 0rem;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 76%;
+  width: 100%;
   background: #f2f2f2;
   overflow: hidden;
   border-radius: 20px;
 }
-input[type="email"], input[type="password"] {
-    border: none;
-    position: relative;
-    height: 6vh;
-    width: 100%;
-} 
+
+
 .register-bottom-createProfile {
     background: black;
     border: 0;
@@ -1007,4 +969,16 @@ html.js-focus-visible {
 .arrow-left {
   display: none;
 }
+}
+
+input.userInput{
+  margin: 1rem auto;
+  /* padding: 1rem 1rem; */
+  border: none;
+  width: 100%;
+  font-size: 21px;
+  box-shadow: 3px 3px #888888;
+}
+span.visibleToOthers {
+  margin-top: 2rem;
 }

@@ -18,12 +18,12 @@ const UserName = () => {
         const inputVal = e.target.value
         if (inputVal === '') {
 
-            setInput(<p className='animation-p' style={{ color: 'red', opacity: '0', marginLeft: '5%', fontSize: '12px', fontWeight: '700' }}>Your name can’t be blank! </p>)
+            setInput(<p className='animation-p' style={{ color: 'red', opacity: '0', marginTop: '-1rem', fontSize: '12px', fontWeight: '700' }}>Your name can’t be blank! </p>)
 
         } else if (inputVal.length === 1) {
-            setInput(<p className='animation-p2' style={{ color: 'red', opacity: '0', marginLeft: '5%', fontSize: '12px', fontWeight: '700' }}>Sorry, that name is too short. </p>)
+            setInput(<p className='animation-p2' style={{ color: 'red', opacity: '0', marginTop: '-1rem', fontSize: '12px', fontWeight: '700' }}>Sorry, that name is too short. </p>)
         } else {
-            setInput(<p className='animation-p3' style={{ opacity: '0', marginLeft: '5%', fontSize: '12px', fontWeight: '700' }}>{inputVal}. Sounds like a good Doggy! </p>)
+            setInput(<p className='animation-p3' style={{ opacity: '0',  marginTop: '-1rem', fontSize: '12px', fontWeight: '700' }}>{inputVal}. Sounds like a good Doggy! </p>)
         }
 
     }
@@ -87,7 +87,7 @@ const UserName = () => {
 
                 <form className="registe-form" >
                     <div className={nextToGender ? 'user-input' : null} >
-                        <h1 >What’s your first name?</h1>
+                        <h1 style={{padding:'0rem 0.35rem'}}>What’s your first name?</h1>
                         <input type="text" className="userInput" name="username" onChange={handelChange} placeholder='First name' />
                         <br />
                         {isInputValid ? isInputValid : null}
@@ -122,8 +122,8 @@ const UserName = () => {
                 <div className='place-it'>
 
                     {nextToDate ? <Link to='/location'  >
-                        <button className="register-bottom-profile" onClick={sendDataToStore}>NEXT</button>
-                    </Link> : <button className="register-bottom-profile" onClick={handelClick}>NEXT</button>}
+                        <button className="register-bottom-onboard" onClick={sendDataToStore}>NEXT</button>
+                    </Link> : <button className="register-bottom-onboard" onClick={handelClick}>NEXT</button>}
                 </div>
             </div>
 

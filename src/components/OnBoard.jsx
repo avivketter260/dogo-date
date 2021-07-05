@@ -14,7 +14,7 @@ const OnBoard = () => {
             <div className="box" >
                 <div className="onboard">
 
-                <h2 >Let's start with the basics</h2>
+                <h2 style={{marginLeft:'3rem'}} >Let's start with the basics</h2>
                 <p className="onBoardComp">Set up your profile to meet new dogs.</p>
                 <img className='img' width='300px' src={dogslove2} alt="" /><br />
                 <Link to ='/username' >
